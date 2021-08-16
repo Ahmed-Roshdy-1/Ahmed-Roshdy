@@ -9,26 +9,25 @@
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
   min-height: 100vh;
   background: #232c33;
 }
 /* --- Navigation --- */
 .navigation {
   position: relative;
-  height: 500px;
+  height: 650px;
   width: 70px;
-  background: #2b343b;
-  box-shadow: 10px 0 0 #4187f6;
-  border-left: 10px solid #2b343b;
-  overflow-x: hidden;
-  transition: width 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #2b343b; */
+  /* box-shadow: 10px 0 0 #4187f6; */
+  /* border-left: 10px solid #2b343b; */
 }
 
 .navigation:hover {
-  width: 300px;
+  width: 150px;
 }
 .navigation ul {
   position: relative;
@@ -45,9 +44,10 @@ body {
   list-style: none;
   text-align: center;
   width: 100%;
+  margin-bottom: 1.5rem;
   padding: 10px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 .navigation ul li a {
   position: relative;
@@ -56,7 +56,15 @@ body {
   text-decoration: none;
   color: #fff;
   text-align: center;
+  overflow-x: hidden;
+  transition: width 0.5s;
 }
+.navigation ul li:hover {
+  background: #4187f6;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
 .navigation ul li a .icon {
   position: relative;
   display: block;
@@ -78,6 +86,36 @@ body {
   white-space: nowrap;
 }
 
+/* ------ Menu Bars ---------- */
+.menu-bars {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  z-index: 10;
+  display: inline;
+  cursor: pointer;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 2px;
+  background-color: #fff;
+  margin: 8px 0;
+  transition: 0.4s;
+}
+/* Rotate first bar */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-7px, 8px);
+}
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+/* Rotate last bar */
+.change .bar3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
 /* --- End Navigation --- */
 
 /* --- Loader  --- */
