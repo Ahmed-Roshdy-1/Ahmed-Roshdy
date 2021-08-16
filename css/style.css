@@ -19,9 +19,16 @@ body {
 .navigation {
   position: relative;
   height: 500px;
-  width: 300px;
+  width: 70px;
   background: #2b343b;
   box-shadow: 10px 0 0 #4187f6;
+  border-left: 10px solid #2b343b;
+  overflow-x: hidden;
+  transition: width 0.5s;
+}
+
+.navigation:hover {
+  width: 300px;
 }
 .navigation ul {
   position: relative;
@@ -39,6 +46,8 @@ body {
   text-align: center;
   width: 100%;
   padding: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .navigation ul li a {
   position: relative;
