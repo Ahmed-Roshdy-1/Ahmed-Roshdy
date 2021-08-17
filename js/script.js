@@ -24,6 +24,15 @@ function toggleNav() {
     menuOpen = false;
   }
 }
+// Activate scrollspy to add active class to navbar items on scroll
+$("#menu").onePageNav({
+  currentClass: "active",
+  changeHash: false,
+  scrollSpeed: 750,
+  scrollThreshold: 0.5,
+  filter: "",
+  easing: "swing",
+});
 
 // Event Listener  ------------
 
