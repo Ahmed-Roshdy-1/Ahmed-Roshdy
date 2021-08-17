@@ -14,16 +14,17 @@ function activeLink() {
 function toggleNav() {
   if (!menuOpen) {
     menuBars.classList.toggle("change");
-    nav.setAttribute("style", "opacity: 1;");
+    nav.classList.replace("navigation", "changeNav");
+
     menuOpen = true;
   } else {
     menuBars.classList.toggle("change");
-    nav.setAttribute("style", "opacity: 0;");
+    nav.classList.replace("changeNav", "navigation");
+
     menuOpen = false;
   }
 }
 
-console.log(window.outerWidth);
 // Event Listener  ------------
 
 // menu bar toggle

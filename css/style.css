@@ -12,10 +12,11 @@ body {
 
   min-height: 100vh;
   background: #232c33;
+  color: #fff;
 }
 /* --- Navigation --- */
 
-.navigation {
+nav {
   position: relative;
   height: 650px;
   width: 70px;
@@ -28,20 +29,21 @@ body {
   /* border-left: 10px solid #2b343b; */
 }
 
-.navigation:hover {
+nav:hover {
   width: 150px;
+  text-decoration: none;
 }
-.navigation ul {
+nav ul {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   padding-top: 50px;
 }
-.navigation ul li.active {
+nav ul li.active {
   background: #4187f6;
 }
-.navigation ul li {
+nav ul li {
   position: relative;
   list-style: none;
   text-align: center;
@@ -51,41 +53,51 @@ body {
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
-.navigation ul li a {
+nav ul li a,
+.changeNav ul li a {
   position: relative;
   display: flex;
   width: flex;
-  text-decoration: none;
   color: #fff;
   text-align: center;
   overflow-x: hidden;
   transition: width 0.5s;
+  text-decoration: none;
 }
-.navigation ul li:hover {
+nav ul li:hover {
   background: #4187f6;
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
+nav ul li:hover a {
+  text-decoration: none;
+  color: #fff;
+}
 
-.navigation ul li a .icon {
+nav ul li a .icon {
   position: relative;
   display: block;
   min-width: 60px;
   height: 30px;
   line-height: 30px;
 }
-.navigation ul li a .icon .bx {
+nav ul li a .icon .bx {
   position: relative;
   font-size: 1.5rem;
   z-index: 1;
 }
-.navigation ul li a .icon .title {
+nav ul li a .icon .title {
   position: relative;
   display: block;
   padding-left: 10px;
   height: 60px;
   line-height: 60px;
   white-space: nowrap;
+}
+.changeNav {
+  background: #000;
+  width: 150px;
+  height: 100vh;
 }
 
 /* ------ Menu Bars ---------- */
@@ -96,7 +108,7 @@ body {
   z-index: 10;
   display: inline;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
 }
 .bar1,
 .bar2,
@@ -121,16 +133,11 @@ body {
 }
 
 @media (max-width: 992px) {
-  .menu-bars {
-    opacity: 1;
+  .navigation {
+    left: -100%;
   }
 }
 
-
-
-nav {
-  opacity: 1;
-}
 /* --- End Navigation --- */
 
 /* --- Loader  --- */
