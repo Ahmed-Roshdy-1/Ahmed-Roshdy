@@ -14,9 +14,7 @@ body {
   background: #232c33;
 }
 /* --- Navigation --- */
-nav {
-  display: flex;
-}
+
 .navigation {
   position: relative;
   height: 650px;
@@ -127,12 +125,12 @@ nav {
     opacity: 1;
   }
 }
-@media (min-width: 992px) {
-  nav{
-    display: flex;
-  }
-}
 
+
+
+nav {
+  opacity: 1;
+}
 /* --- End Navigation --- */
 
 /* --- Loader  --- */

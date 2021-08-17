@@ -1,7 +1,8 @@
 let spinerLoader = document.getElementById("loader"); // for Loader
 let list = document.querySelectorAll(".list"); // for Navigation
 let menuBars = document.getElementById("menu-bars"); // for Menu bars
-let memuOpen = false;
+let menuOpen = false;
+let nav = document.getElementById("navigation");
 
 // add active class in selected tab Navigation
 function activeLink() {
@@ -11,19 +12,18 @@ function activeLink() {
 
 // toggle Navigation
 function toggleNav() {
-  if (!memuOpen) {
+  if (!menuOpen) {
     menuBars.classList.toggle("change");
+    nav.setAttribute("style", "opacity: 1;");
+    menuOpen = true;
   } else {
     menuBars.classList.toggle("change");
+    nav.setAttribute("style", "opacity: 0;");
+    menuOpen = false;
   }
 }
 
-$(document).ready(function () {
-  $(".menu-bars").click(function () {
-    $("nav").toggle("activeNav");
-  });
-});
-
+console.log(window.outerWidth);
 // Event Listener  ------------
 
 // menu bar toggle
