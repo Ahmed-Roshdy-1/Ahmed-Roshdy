@@ -2,6 +2,7 @@ let spinerLoader = document.getElementById("loader"); // for Loader
 let list = document.querySelectorAll(".list"); // for Navigation
 let menuBars = document.getElementById("menu-bars"); // for Menu bars
 let memuOpen = false;
+let navigation = document.getElementById("header");
 
 // add active class in selected tab Navigation
 function activeLink() {
@@ -9,19 +10,20 @@ function activeLink() {
   this.classList.add("active");
 }
 
-// toggle Navigation
-function toggleNav() {
-  if (memuOpen) {
-    menuBars.classList.add("change");
+// toggle Navigation with navbars
+
+$(document).ready(function () {
+  if (!memuOpen) {
+    menuBars.classList.toggle("change");
   } else {
-    menuBars.classList.remove("change");
+    menuBars.classList.toggle("change");
   }
-}
+  $(menuBars).click(function () {
+    $("nav").toggle();
+  });
+});
 
 // Event Listener  ------------
-
-// menu bar toggle
-menuBars.addEventListener("click", toggleNav);
 
 // set active class for Navigation
 list.forEach((item) => item.addEventListener("click", activeLink));
