@@ -5,7 +5,6 @@
   padding: 0;
   margin: 0;
   font-family: courgette, sans-serif, serif;
-  /* scroll-behavior: smooth; */
 }
 
 body {
@@ -13,6 +12,9 @@ body {
   min-height: 100vh;
   background: #232c33;
   color: #fff;
+  background-image: url("../Images/Backgound.jfif");
+  background-size: 100%;
+  background-attachment: fixed;
 }
 /* --- Navigation --- */
 header {
@@ -49,7 +51,7 @@ nav ul {
   padding-top: 50px;
 }
 nav ul li.active {
-  background: #4187f6;
+  background: #e70971;
 }
 nav ul li {
   position: relative;
@@ -182,8 +184,6 @@ section {
 
   display: flex;
 
-  background: url("https://images.unsplash.com/photo-1628961434253-296d21adc2a4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80");
-  background-size: cover;
   position: relative;
 }
 .home div {
