@@ -34,7 +34,7 @@ $("#menu").onePageNav({
   easing: "swing",
 });
 
-// Event Listener  ------------
+// Event Listener  -----------
 
 // menu bar toggle
 menuBars.addEventListener("click", toggleNav);

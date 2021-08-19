@@ -1,5 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 
+:root {
+  --primary-color: #ba181b;
+  --secondary-color: #e5383b;
+  --background-color: #040507;
+  --text-color: #f4f4f4;
+  --nav-background: #161b22;
+  --section-title-before: #dddddd;
+  --changeNav: #242423;
+  --nav-color: #ffffff;
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,8 +20,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: #000;
-  color: #fff;
+  background: var(--background-color);
+  color: var(--text-color);
 }
 /* --- Navigation --- */
 header {
@@ -30,10 +40,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-
-  /* background: #2b343b; */
-  /* box-shadow: 10px 0 0 #4187f6; */
-  /* border-left: 10px solid #2b343b; */
 }
 
 nav:hover {
@@ -48,13 +54,20 @@ nav ul {
   padding-top: 50px;
 }
 nav ul li.active {
-  background: #e70971;
+  background: var(--secondary-color);
 }
+nav ul li.active .icon {
+  color: var(--text-color);
+}
+nav ul li:hover .icon {
+  color: var(--text-color);
+}
+
 nav ul li {
   position: relative;
   list-style: none;
   text-align: center;
-  background-color: #211111;
+  background-color: var(--nav-background);
   width: 100%;
   margin-bottom: 1.5rem;
   padding: 10px;
@@ -66,25 +79,26 @@ nav ul li a,
   position: relative;
   display: flex;
   width: flex;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
   overflow-x: hidden;
   transition: width 0.5s;
   text-decoration: none;
 }
 nav ul li:hover {
-  background: #4187f6;
+  background: var(--secondary-color);
   border-top-right-radius: 25px;
   border-bottom-right-radius: 25px;
 }
 nav ul li:hover a {
   text-decoration: none;
-  color: #fff;
+  color: var(--nav-color);
 }
 
 nav ul li a .icon {
   position: relative;
   display: block;
+  color: var(--secondary-color);
   min-width: 60px;
   height: 30px;
   line-height: 30px;
@@ -103,7 +117,7 @@ nav ul li a .icon .title {
   white-space: nowrap;
 }
 .changeNav {
-  background: #000;
+  background: var(--changeNav);
   width: 100%;
   height: 100vh;
 }
@@ -123,7 +137,7 @@ nav ul li a .icon .title {
 .bar3 {
   width: 25px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--text-color);
   margin: 8px 0;
   transition: 0.4s;
 }
@@ -155,7 +169,7 @@ nav ul li a .icon .title {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(255, 255, 255, 0.8);
+  background: var(--background-color);
 }
 
 .loader img {
