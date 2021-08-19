@@ -36,13 +36,15 @@ $("#menu").onePageNav({
 
 // Event Listener  -----------
 
+
+// Loader for window
+window.addEventListener("load", function () {
+  spinerLoader.hidden = true;
+});
+
 // menu bar toggle
 menuBars.addEventListener("click", toggleNav);
 
 // set active class for Navigation
 list.forEach((item) => item.addEventListener("click", activeLink));
 
-// Loader for window
-window.addEventListener("load", function () {
-  spinerLoader.hidden = true;
-});
