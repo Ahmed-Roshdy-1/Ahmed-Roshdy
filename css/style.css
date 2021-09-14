@@ -396,12 +396,13 @@ section {
 
 /* End Education Section */
 
-/*  */
+/*  Projects Section   */
 .projects {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
+  height: auto;
 }
 .card-conteainer {
   display: flex;
@@ -475,6 +476,7 @@ img {
 .card .back .details h2 {
   margin: 5px;
   padding: 0;
+  font-family: Vidaloka, sans-serif;
   font-size: 24px;
   color: var(--text-color);
   text-shadow: 2px 2px 5px var(--primary-color);
@@ -482,6 +484,7 @@ img {
 .card .back .details p {
   color: #fff;
   font-size: 18px;
+  font-family: Handlee, sans-serif;
 }
 #js {
   color: yellow;
@@ -493,6 +496,10 @@ img {
 }
 #html {
   color: #dc2f02;
+  font-size: 36px;
+}
+#bootstrap {
+  color: #7952b3;
   font-size: 36px;
 }
 
@@ -507,6 +514,13 @@ img {
   color: var(--secondary-color);
 }
 
-/*  */
+@media (max-width: 992px) {
+  
+  .card-conteainer {
+    display: block;
+  }
+}
+
+/*  End Projects Section  */
 
 /* End Sections */
