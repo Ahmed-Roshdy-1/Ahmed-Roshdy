@@ -1,10 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Allison&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&family=Courgette&family=Handlee&family=Allison&display=swap");
 
 :root {
-  --primary-color: #ba181b;
+  --primary-color: #9d0208;
   --secondary-color: #e5383b;
   --background-color: #040507;
   --text-color: #f4f4f4;
+  --text-color-header: #fff;
   --nav-background: #000;
   --section-title-before: #dddddd;
   --nav-color: #ffffff;
@@ -196,8 +197,9 @@ section {
   padding-bottom: 30px;
 }
 .section-title h1 {
+  line-height: 1.5;
   width: fit-content;
-  border-bottom: solid 3px var(--secondary-color);
+  border-bottom: solid 3px var(--primary-color);
 }
 
 /* Start Section General Rules */
@@ -298,5 +300,62 @@ section {
 }
 
 /*---- End Home Section ---- */
+
+/*  */
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: unset;
+}
+
+.educationInfo {
+  text-align: start;
+  align-self: start;
+  margin-left: 15rem;
+  line-height: 2;
+}
+.educationInfo h2 {
+  font-family: Vidaloka, sans-serif;
+  color: var(--secondary-color);
+}
+.educationInfo h3 {
+  font-family: Vidaloka, sans-serif;
+  color: var(--text-color-header);
+}
+.educationInfo p {
+  font-size: 25px;
+  margin-top: 15px;
+}
+.educationInfo i {
+  font-size: 30px;
+  margin-right: 5px;
+  color: var(--secondary-color);
+}
+.educationInfo span {
+  font-size: 25px;
+}
+
+.coursesInfo {
+  font-family: Handlee;
+  text-align: start;
+  align-self: start;
+  margin: 3rem 0 0 15rem;
+  line-height: 2;
+}
+.coursesInfo h2 {
+  font-family: Vidaloka, sans-serif;
+  color: var(--secondary-color);
+}
+.coursesInfo p {
+  font-family: Handlee;
+  font-size: 25px;
+}
+.coursesInfo p i {
+  font-size: 30px;
+  color: var(--secondary-color);
+}
+
+/*  */
 
 /* End Sections */
