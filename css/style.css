@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Allison&display=swap");
 
 :root {
   --primary-color: #ba181b;
   --secondary-color: #e5383b;
   --background-color: #040507;
   --text-color: #f4f4f4;
-  --nav-background: #161b22;
+  --nav-background: #000;
   --section-title-before: #dddddd;
-  --changeNav: #242423;
   --nav-color: #ffffff;
 }
 * {
@@ -20,7 +19,8 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: var(--background-color);
+  background-color: var(--nav-background);
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%232d2c2e' fill-opacity='0.5' fill-rule='evenodd'/%3E%3C/svg%3E");
   color: var(--text-color);
 }
 /* --- Navigation --- */
@@ -32,18 +32,19 @@ header {
   z-index: 9997;
   transition: all 0.5s;
   overflow-y: auto;
+  border: none;
 }
 nav {
   position: relative;
   height: 650px;
-  width: 70px;
+  width: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 nav:hover {
-  width: 150px;
+  width: 200px;
   text-decoration: none;
 }
 nav ul {
@@ -51,7 +52,7 @@ nav ul {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 50px;
+  padding: 50px 30px 0 0;
 }
 nav ul li.active {
   background: var(--secondary-color);
@@ -85,6 +86,7 @@ nav ul li a,
   transition: width 0.5s;
   text-decoration: none;
 }
+
 nav ul li:hover {
   background: var(--secondary-color);
   border-top-right-radius: 25px;
@@ -117,7 +119,6 @@ nav ul li a .icon .title {
   white-space: nowrap;
 }
 .changeNav {
-  background: var(--changeNav);
   width: 100%;
   height: 100vh;
 }
@@ -190,21 +191,96 @@ section {
 /*---- Home Section -----*/
 .home {
   align-items: center;
-  text-align: center;
+  text-align: start;
   width: 100%;
   height: 100vh;
-  background-image: url("../Images/Backgound.jfif");
+  background-image: url("../Images/img.jpg");
   background-position: center center;
+  background-size: 100% 100%;
   background-attachment: fixed;
   display: flex;
   position: relative;
 }
-.home div {
-  width: 100%;
-  height: 100vh;
+
+.home h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 56px;
+  font-family: Allison;
+  color: var(--text-color);
 }
-.home div h1 {
-  margin: 20rem;
+
+.home p {
+  color: var(--text-color);
+  line-height: 3;
+  font-size: 26px;
+  font-family: Courgette, sans-serif;
+}
+
+.home p span {
+  color: var(--secondary-color);
+  letter-spacing: 1px;
+}
+.home .social-links {
+  margin-top: 30px;
+}
+
+.home .social-links a {
+  font-size: 40px;
+  display: inline-block;
+  color: var(--text-color);
+  margin-right: 35px;
+  line-height: 1;
+}
+.home .social-links a:hover {
+  text-decoration: none;
+}
+
+.youtube i {
+  color: #c00;
+}
+
+.linkedin i {
+  color: #0a66c2;
+}
+.github i {
+  color: #fff;
+  background: #000;
+  border-radius: 25px;
+}
+.hackerrank i {
+  color: #1ba94c;
+}
+
+.envelope i {
+  color: #5fa8d3;
+}
+
+@media (max-width: 992px) {
+  .home {
+    text-align: center;
+  }
+
+  .home h1 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+
+  .home p {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .home p:last-of-type {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .home .social-links a {
+    font-size: 24px;
+  }
 }
 
 /*---- End Home Section ---- */
