@@ -337,7 +337,7 @@ section {
 }
 
 .coursesInfo {
-  font-family: Handlee;
+  font-family: Handlee, sans-serif;
   text-align: start;
   align-self: start;
   margin: 3rem 0 0 15rem;
@@ -354,6 +354,43 @@ section {
 .coursesInfo p i {
   font-size: 30px;
   color: var(--secondary-color);
+}
+@media (max-width: 992px) {
+  .education {
+    justify-content: center;
+  }
+  .educationInfo {
+    align-self: center;
+    margin: 0px;
+  }
+  .coursesInfo {
+    align-self: center;
+    margin: 0px;
+  }
+  .educationInfo h2 {
+    font-size: 20px;
+  }
+  .educationInfo h3 {
+    font-size: 18px;
+  }
+  .educationInfo p {
+    font-size: 16px;
+  }
+  .educationInfo i {
+    font-size: 25px;
+  }
+  .educationInfo span {
+    font-size: 18px;
+  }
+  .coursesInfo h2 {
+    font-size: 18px;
+  }
+  .coursesInfo p {
+    font-size: 14px;
+  }
+  .coursesInfo p i {
+    font-size: 20px;
+  }
 }
 
 /*  */
