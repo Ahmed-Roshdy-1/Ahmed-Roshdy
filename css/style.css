@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Vidaloka&family=Courgette&family=Handlee&family=Allison&display=swap");
 
 :root {
-  --primary-color: #9d0208;
+  --primary-color: #ff0000;
   --secondary-color: #e5383b;
   --background-color: #040507;
   --text-color: #f4f4f4;
@@ -301,7 +301,7 @@ section {
 
 /*---- End Home Section ---- */
 
-/*  */
+/* Education Section */
 .education {
   display: flex;
   flex-direction: column;
@@ -392,6 +392,121 @@ section {
     font-size: 20px;
   }
 }
+
+/* End Education Section */
+
+/*  */
+.projects {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+.card-conteainer {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 2;
+}
+
+.card {
+  display: grid;
+  margin: 2rem;
+  width: 300px;
+  height: 400px;
+  perspective: 600px;
+  background: inherit;
+}
+
+.card .front {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: var(--secondary-color) 2px solid;
+  background: black;
+  backface-visibility: hidden;
+  transform: rotateY(0deg);
+  transition: 1s;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.card:hover .front {
+  transform: rotateY(-180deg);
+}
+
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border: var(--primary-color) 2px solid;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+.card:hover .back {
+  transform: rotateY(0deg);
+}
+.card .back .details {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card .back:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+}
+.card .back .details h2 {
+  margin: 5px;
+  padding: 0;
+  font-size: 24px;
+  color: var(--text-color);
+  text-shadow: 2px 2px 5px var(--primary-color);
+}
+.card .back .details p {
+  color: #fff;
+  font-size: 18px;
+}
+#js {
+  color: yellow;
+  font-size: 36px;
+}
+#css {
+  color: #023e8a;
+  font-size: 36px;
+}
+#html {
+  color: #dc2f02;
+  font-size: 36px;
+}
+
+.icons {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons a i {
+  font-size: 56px;
+  color: var(--secondary-color);
+}
+
+
 
 /*  */
 
