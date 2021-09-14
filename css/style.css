@@ -180,14 +180,28 @@ nav ul li a .icon .title {
   transform: translate(-50%, -50%);
 }
 /* --- end Loader  --- */
-
-/* ---- sections ------- */
+/* Start Section General Rules */
 
 section {
+  padding: 60px 0;
+  overflow: hidden;
   width: 100%;
   height: 100vh;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
+.section-title {
+  align-items: center;
+  padding-bottom: 30px;
+}
+.section-title h1 {
+  width: fit-content;
+  border-bottom: solid 3px var(--secondary-color);
+}
+
+/* Start Section General Rules */
+
 /*---- Home Section -----*/
 .home {
   align-items: center;
