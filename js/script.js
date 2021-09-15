@@ -34,6 +34,8 @@ $("#menu").onePageNav({
   easing: "swing",
 });
 
+AOS.init();
+
 // Event Listener  -----------
 
 // Loader for window
