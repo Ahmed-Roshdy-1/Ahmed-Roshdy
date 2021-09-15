@@ -551,4 +551,106 @@ img {
 
 /*  End Projects Section  */
 
+/* Skills Section */
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: auto;
+}
+
+.tools {
+  text-align: start;
+  align-self: start;
+  margin-left: 15rem;
+}
+
+.tools h2 {
+  font-family: Handlee, sans-serif;
+  color: var(--secondary-color);
+  margin: 1rem 0 3rem 0;
+  width: fit-content;
+  border-bottom: 2px solid var(--text-color-header);
+  text-transform: capitalize;
+}
+
+#js-1 {
+  color: yellow;
+}
+#css-1 {
+  color: #023e8a;
+}
+#html-1 {
+  color: #dc2f02;
+}
+#bootstrap-1 {
+  color: #7952b3;
+}
+
+.tools i {
+  font-size: 65px;
+  margin-left: 2.5rem;
+}
+.tools i:hover {
+  font-size: 75px;
+  transition: 1s;
+}
+.version-control {
+  text-align: start;
+  align-self: start;
+  margin: 1rem 0 0 15rem;
+}
+
+.version-control h2 {
+  font-family: Handlee, sans-serif;
+  color: var(--secondary-color);
+  margin: 1rem 0 3rem 0;
+  width: fit-content;
+  border-bottom: 2px solid var(--text-color-header);
+  text-transform: capitalize;
+}
+.version-control i {
+  font-size: 65px;
+  margin-left: 2.5rem;
+}
+.version-control .devicon-github-plain {
+  background: var(--text-color-header);
+  border-radius: 35px;
+}
+
+.version-control i:hover {
+  font-size: 75px;
+  transition: 1s;
+}
+.concept {
+  text-align: start;
+  align-self: start;
+  margin-left: 15rem;
+}
+
+.concept h2 {
+  font-family: Handlee, sans-serif;
+  color: var(--secondary-color);
+  margin: 1rem 0 1rem 0;
+  width: fit-content;
+  border-bottom: 2px solid var(--text-color-header);
+  text-transform: capitalize;
+}
+.concept p {
+  font-family: Handlee, sans-serif;
+  color: var(--text-color);
+  font-size: 30px;
+}
+.concept p i {
+  font-size: 25px;
+  color: var(--secondary-color);
+  margin-right: 0.5rem;
+}
+.concept p:hover {
+  font-size: 35px;
+  transition: 1s;
+}
+/* End Skills Section */
+
 /* End Sections */
