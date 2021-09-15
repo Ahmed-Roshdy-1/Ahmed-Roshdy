@@ -737,6 +737,7 @@ img {
 .contactInfo a {
   text-decoration: none;
   color: inherit;
+  height: fit-content;
 }
 
 .contactInfo .card:hover i {
