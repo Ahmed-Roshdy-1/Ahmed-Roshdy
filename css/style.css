@@ -654,7 +654,6 @@ img {
 
 @media (max-width: 992px) {
   .skills {
-    display: ;
     justify-content: center;
   }
   .tools {
@@ -714,6 +713,74 @@ img {
   }
 }
 /* End Skills Section */
+
+/* Contact Section */
+.contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: auto;
+}
+.contactInfo {
+  display: flex;
+  margin: 2rem 10rem 2rem 12rem;
+}
+.contactInfo .card {
+  text-align: center;
+  align-content: center;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(1px);
+}
+.contactInfo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contactInfo .card:hover i {
+  font-size: 75px;
+}
+.contactInfo .card i {
+  font-size: 65px;
+  color: var(--secondary-color);
+}
+.contactInfo .card h3 {
+  color: var(--text-color-header);
+  font-family: Handlee, sans-serif;
+}
+.contactInfo .card p {
+  font-size: 26px;
+  font-family: Handlee, sans-serif;
+}
+
+.contact .social-links {
+  margin-top: 65px;
+}
+
+.contact .social-links a {
+  font-size: 65px;
+  display: inline-block;
+  color: var(--text-color);
+  margin-right: 40px;
+  line-height: 1;
+}
+.contact .social-links a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 992px) {
+  .contactInfo {
+    display: block;
+  }
+  .contact .social-links a {
+    font-size: 35px;
+    margin-right: 20px;
+  }
+}
+
+/* End of Contant Section */
 
 /* End Sections */
 
