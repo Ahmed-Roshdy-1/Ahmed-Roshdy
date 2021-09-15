@@ -785,6 +785,20 @@ img {
 
 /* End Sections */
 
+/* Footer */
+#footer {
+  background: var(--background-color);
+  text-align: center;
+}
+#footer .container {
+  line-height: 3;
+  font-family: Handlee, sans-serif;
+  letter-spacing: 2px;
+}
+#footer .container strong {
+  color: var(--secondary-color);
+}
+
 /* Scrolling */
 /* width */
 ::-webkit-scrollbar {
