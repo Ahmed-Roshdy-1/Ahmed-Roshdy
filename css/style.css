@@ -513,10 +513,39 @@ img {
   font-size: 56px;
   color: var(--secondary-color);
 }
+.project-Reference {
+  text-align: center;
+}
+.project-Reference h3 {
+  text-align: center;
+  margin: 10rem 0 5rem 0;
+  font-family: Handlee, sans-serif;
+  color: var(--secondary-color);
+}
+.project-Reference a {
+  padding: 10px;
+  font-family: Vidaloka, sans-serif;
+  color: var(--text-color-header);
+  text-decoration: none;
+  font-size: 25px;
+  border: 2px solid var(--secondary-color);
+  border-radius: 30px;
+}
+.project-Reference a:hover {
+  background: var(--secondary-color);
+  color: #000;
+  transition: 0.5s;
+}
 
 @media (max-width: 992px) {
   .card-conteainer {
     display: block;
+  }
+  .project-Reference h3 {
+    font-size: 18px;
+  }
+  .project-Reference a {
+    font-size: 18px;
   }
 }
 
