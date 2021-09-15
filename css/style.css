@@ -716,3 +716,26 @@ img {
 /* End Skills Section */
 
 /* End Sections */
+
+/* Scrolling */
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* End of Scrolling */
