@@ -820,7 +820,7 @@ img {
   background: var(--primary-color);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1450px) {
   ::-webkit-scrollbar {
     width: 0px;
   }
