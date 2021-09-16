@@ -820,4 +820,10 @@ img {
   background: var(--primary-color);
 }
 
+@media (max-width: 992px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
+
 /* End of Scrolling */
