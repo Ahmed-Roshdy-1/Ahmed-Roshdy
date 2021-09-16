@@ -789,6 +789,7 @@ img {
 #footer {
   background: var(--background-color);
   text-align: center;
+  margin-top: 5rem;
 }
 #footer .container {
   line-height: 3;
