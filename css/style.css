@@ -670,6 +670,10 @@ img {
     font-size: 25px;
     margin-left: 2rem;
   }
+  .tools i:hover {
+    font-size: 35px;
+    transition: 1s;
+  }
   .version-control {
     margin: 0;
     align-items: center;
@@ -684,6 +688,10 @@ img {
     font-size: 35px;
     margin-right: 2rem;
   }
+  .version-control i:hover {
+    font-size: 45px;
+    transition: 1s;
+  }
   .concept {
     align-self: center;
     align-items: center;
@@ -693,6 +701,10 @@ img {
     margin: 2rem 0rem 2rem 0rem;
   }
   .concept p {
+    font-size: 18px;
+  }
+
+  .concept p:hover {
     font-size: 18px;
   }
 }
@@ -709,6 +721,9 @@ img {
     margin: 2rem 15rem 2rem 0rem;
   }
   .concept p {
+    font-size: 12px;
+  }
+  .concept p:hover {
     font-size: 12px;
   }
 }
