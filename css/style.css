@@ -23,6 +23,7 @@ body {
   background-color: var(--nav-background);
   background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 20.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H20v-1.5zM0 20h2v20H0V20zm4 0h2v20H4V20zm4 0h2v20H8V20zm4 0h2v20h-2V20zm4 0h2v20h-2V20zm4 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2zm0 4h20v2H20v-2z' fill='%232d2c2e' fill-opacity='0.5' fill-rule='evenodd'/%3E%3C/svg%3E");
   color: var(--text-color);
+  
 }
 /* --- Navigation --- */
 header {
@@ -172,6 +173,7 @@ nav ul li a .icon .title {
   left: 0;
   right: 0;
   background: var(--background-color);
+  z-index: 100000;
 }
 
 .loader img {
@@ -814,6 +816,7 @@ img {
 #footer .container strong {
   color: var(--secondary-color);
 }
+/* End Footer */
 
 /* Scrolling */
 /* width */
