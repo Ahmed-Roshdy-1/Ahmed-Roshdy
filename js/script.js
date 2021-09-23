@@ -8,6 +8,12 @@ let nav = document.getElementById("navigation");
 function activeLink() {
   list.forEach((item) => item.classList.remove("active"));
   this.classList.add("active");
+
+  if (menuOpen) {
+    menuBars.classList.toggle("change");
+    nav.classList.replace("changeNav", "navigation");
+    menuOpen = false;
+  }
 }
 
 // toggle Navigation
