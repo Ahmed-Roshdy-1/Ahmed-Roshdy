@@ -414,8 +414,8 @@ section {
 .card {
   display: grid;
   margin: 2rem;
-  width: 300px;
-  height: 400px;
+  width: 250px;
+  height: 350px;
   perspective: 600px;
   background: inherit;
 }
@@ -451,11 +451,13 @@ img {
   background: black;
   border: var(--primary-color) 2px solid;
   backface-visibility: hidden;
+  visibility: hidden;
   transform: rotateY(180deg);
   transition: 1s;
 }
 .card:hover .back {
   transform: rotateY(0deg);
+  visibility: unset;
 }
 .card .back .details {
   position: absolute;
@@ -478,30 +480,30 @@ img {
   margin: 5px;
   padding: 0;
   font-family: Vidaloka, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   color: var(--text-color);
   text-shadow: 2px 2px 5px var(--primary-color);
 }
 .card .back .details p {
   color: #fff;
-  font-size: 18px;
+  font-size: 15px;
   font-family: Handlee, sans-serif;
 }
 #js {
   color: yellow;
-  font-size: 36px;
+  font-size: 30px;
 }
 #css {
   color: #023e8a;
-  font-size: 36px;
+  font-size: 30px;
 }
 #html {
   color: #dc2f02;
-  font-size: 36px;
+  font-size: 30px;
 }
 #bootstrap {
   color: #7952b3;
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .icons {
@@ -511,7 +513,7 @@ img {
 }
 
 .icons a i {
-  font-size: 56px;
+  font-size: 45px;
   color: var(--secondary-color);
 }
 .project-Reference {
